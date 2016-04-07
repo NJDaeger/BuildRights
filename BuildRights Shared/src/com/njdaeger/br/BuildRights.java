@@ -180,6 +180,7 @@ public class BuildRights extends JavaPlugin {
 		//pm.addPermission(place48);
 		//pm.addPermission(place49);
 		//pm.addPermission(place50);
+		
 		//break
 		pm.addPermission(break1);
 		pm.addPermission(break2);
