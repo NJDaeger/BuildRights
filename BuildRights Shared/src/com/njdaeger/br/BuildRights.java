@@ -47,27 +47,31 @@ public class BuildRights extends JavaPlugin {
 	public Permission place18 = new Permission("buildrights.place.leaves");			//BlockListener
 	public Permission place19 = new Permission("buildrights.place.sponge");			//BlockListener
 	public Permission place20 = new Permission("buildrights.place.glass");			//BlockListener
-	public Permission place21 = new Permission("buildrights.place.lapisore");
-	public Permission place22 = new Permission("buildrights.place.lapisblock");
-	public Permission place23 = new Permission("buildrights.place.dispenser");
-	public Permission place24 = new Permission("buildirghts.place.sandstone");
-	public Permission place25 = new Permission("buildrights.place.noteblock");
-	public Permission place26 = new Permission("buildrights.place.bed");
-	public Permission place27 = new Permission("buildrights.place.poweredrail");
-	public Permission place28 = new Permission("buildrights.place.detectorrail");
-	public Permission place29 = new Permission("buildrights.place.stickypiston");
-	public Permission place30 = new Permission("buildrights.place.cobweb");
-	public Permission place31 = new Permission("buildrights.place.tallgrass");
-	public Permission place32 = new Permission("buildrights.place.deadbush");
-	public Permission place33 = new Permission("buildrights.place.piston");
-	public Permission place34 = new Permission("buildrights.place.pistonhead");
-	public Permission place35 = new Permission("buildrights.place.wool");
-	//public Permission place36 = new Permission("buildrights.place.pistonhead");
-	public Permission place37 = new Permission("buildrights.place.dandelion");
-	public Permission place38 = new Permission("buildrights.place.redflower");
-	public Permission place39 = new Permission("buildrights.place.brownmushroom");
-	public Permission place40 = new Permission("buildrights.place.redmushroom");
-	public Permission place41 = new Permission("buildrights.place.goldblock");
+	public Permission place21 = new Permission("buildrights.place.lapisore");		//BlockListener
+	public Permission place22 = new Permission("buildrights.place.lapisblock");		//BlockListener
+	public Permission place23 = new Permission("buildrights.place.dispenser");		//BlockListener
+	public Permission place24 = new Permission("buildirghts.place.sandstone");		//BlockListener
+	public Permission place25 = new Permission("buildrights.place.noteblock");		//BlockListener
+	public Permission place26 = new Permission("buildrights.place.bed");			//BlockListener
+	public Permission place27 = new Permission("buildrights.place.poweredrail");	//BlockListener
+	public Permission place28 = new Permission("buildrights.place.detectorrail");	//BlockListener
+	public Permission place29 = new Permission("buildrights.place.stickypiston");	//BlockListener
+	public Permission place30 = new Permission("buildrights.place.cobweb");			//BlockListener
+	public Permission place31 = new Permission("buildrights.place.tallgrass");		//BlockListener
+	public Permission place32 = new Permission("buildrights.place.deadbush");		//BlockListener
+	public Permission place33 = new Permission("buildrights.place.piston");			//BlockListener
+	public Permission place34 = new Permission("buildrights.place.pistonhead");		//BlockListener
+	public Permission place35 = new Permission("buildrights.place.wool");			//BlockListener
+	//public Permission place36 = new Permission("buildrights.place.pistonhead");	//BlockListener (unneeded)
+	public Permission place37 = new Permission("buildrights.place.dandelion");		//BlockListener
+	public Permission place38 = new Permission("buildrights.place.redflower");		//BlockListener
+	public Permission place39 = new Permission("buildrights.place.brownmushroom");	//BlockListener
+	public Permission place40 = new Permission("buildrights.place.redmushroom");	//BlockListener
+	public Permission place41 = new Permission("buildrights.place.goldblock");		//BlockListener
+	public Permission place42 = new Permission("buildrights.place.ironblock");		//BlockListener
+	public Permission place43 = new Permission("buildrights.place.doublestep");		//BlockListener
+	public Permission place44 = new Permission("buildrights.place.slab");			//BlockListener
+	public Permission place45 = new Permission("buildrights.place.brick");			//BlockListener
 	
 		//break permissions
 	public Permission break1 = new Permission("buildrights.break.stone");			//BlockListener
@@ -90,27 +94,31 @@ public class BuildRights extends JavaPlugin {
 	public Permission break18 = new Permission("buildrights.break.leaves");			//BlockListener
 	public Permission break19 = new Permission("buildrights.break.sponge");			//BlockListener
 	public Permission break20 = new Permission("buildrights.break.glass");			//BlockListener
-	public Permission break21 = new Permission("buildrights.break.lapisore");
-	public Permission break22 = new Permission("buildrights.break.lapisblock");
-	public Permission break23 = new Permission("buildrights.break.dispenser");
-	public Permission break24 = new Permission("buildrights.break.sandstone");
-	public Permission break25 = new Permission("buildrights.break.noteblock");
-	public Permission break26 = new Permission("buildrights.break.bed");
-	public Permission break27 = new Permission("buildrights.break.poweredrail");
-	public Permission break28 = new Permission("buildrights.break.detectorrail");
-	public Permission break29 = new Permission("buildrights.break.stickypiston");
-	public Permission break30 = new Permission("buildrights.break.cobweb");
-	public Permission break31 = new Permission("buildrights.break.tallgrass");
-	public Permission break32 = new Permission("buildrights.break.deadbush");
-	public Permission break33 = new Permission("buildrights.break.piston");
-	public Permission break34 = new Permission("buildrights.break.pistonhead");
-	public Permission break35 = new Permission("buildrights.break.wool");
+	public Permission break21 = new Permission("buildrights.break.lapisore");		//BlockListener
+	public Permission break22 = new Permission("buildrights.break.lapisblock");		//BlockListener
+	public Permission break23 = new Permission("buildrights.break.dispenser");		//BlockListener
+	public Permission break24 = new Permission("buildrights.break.sandstone");		//BlockListener
+	public Permission break25 = new Permission("buildrights.break.noteblock");		//BlockListener
+	public Permission break26 = new Permission("buildrights.break.bed");			//BlockListener
+	public Permission break27 = new Permission("buildrights.break.poweredrail");	//BlockListener
+	public Permission break28 = new Permission("buildrights.break.detectorrail");	//BlockListener
+	public Permission break29 = new Permission("buildrights.break.stickypiston");	//BlockListener
+	public Permission break30 = new Permission("buildrights.break.cobweb");			//BlockListener
+	public Permission break31 = new Permission("buildrights.break.tallgrass");		//BlockListener
+	public Permission break32 = new Permission("buildrights.break.deadbush");		//BlockListener
+	public Permission break33 = new Permission("buildrights.break.piston");			//BlockListener
+	public Permission break34 = new Permission("buildrights.break.pistonhead");		//BlockListener
+	public Permission break35 = new Permission("buildrights.break.wool");			//BlockListener
 	//public Permission break36 = new Permission("buildrights.break.pistonext");    //is with pistonhead permission
-	public Permission break37 = new Permission("buildrights.break.dandelion");
-	public Permission break38 = new Permission("buildrights.break.redflower");
-	public Permission break39 = new Permission("buildrights.break.brownmushroom");
-	public Permission break40 = new Permission("buildrights.break.redmushroom");
-	public Permission break41 = new Permission("buildrights.break.goldblock");
+	public Permission break37 = new Permission("buildrights.break.dandelion");		//BlockListener
+	public Permission break38 = new Permission("buildrights.break.redflower");		//BlockListener
+	public Permission break39 = new Permission("buildrights.break.brownmushroom");	//BlockListener
+	public Permission break40 = new Permission("buildrights.break.redmushroom");	//BlockListener
+	public Permission break41 = new Permission("buildrights.break.goldblock");		//BlockListener
+	public Permission break42 = new Permission("buildrights.break.ironblock");		//BlockListener
+	public Permission break43 = new Permission("buildrights.break.doublestep");		//BlockListener
+	public Permission break44 = new Permission("buildrights.break.slab");			//BlockListener
+	public Permission break45 = new Permission("buildrights.break.brick"); 			//BlockListener
 	
 	@Override
 	public void onEnable() {
@@ -163,10 +171,10 @@ public class BuildRights extends JavaPlugin {
 		pm.addPermission(place39);
 		pm.addPermission(place40);
 		pm.addPermission(place41);
-		//pm.addPermission(place42);
-		//pm.addPermission(place43);
-		//pm.addPermission(place44);
-		//pm.addPermission(place45);
+		pm.addPermission(place42);
+		pm.addPermission(place43);
+		pm.addPermission(place44);
+		pm.addPermission(place45);
 		//pm.addPermission(place46);
 		//pm.addPermission(place47);
 		//pm.addPermission(place48);
@@ -214,10 +222,10 @@ public class BuildRights extends JavaPlugin {
 		pm.addPermission(break39);
 		pm.addPermission(break40);
 		pm.addPermission(break41);
-		//pm.addPermission(break42);
-		//pm.addPermission(break43);
-		//pm.addPermission(break44);
-		//pm.addPermission(break45);
+		pm.addPermission(break42);
+		pm.addPermission(break43);
+		pm.addPermission(break44);
+		pm.addPermission(break45);
 		//pm.addPermission(break46);
 		//pm.addPermission(break47);
 		//pm.addPermission(break48);
