@@ -1,0 +1,6 @@
+name: Buildrights
+main: com.njdaeger.br.BuildRights
+version: 1.15-BETA
+author: NJDaeger
+description: >
+             A way to specify what your builders can and can't place.

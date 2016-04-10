@@ -72,6 +72,7 @@ public class BuildRights extends JavaPlugin {
 	public Permission place43 = new Permission("buildrights.place.doublestep");		//BlockListener
 	public Permission place44 = new Permission("buildrights.place.slab");			//BlockListener
 	public Permission place45 = new Permission("buildrights.place.brick");			//BlockListener
+	public Permission place46 = new Permission("buildrights.place.tnt");			//BlockListener
 	
 		//break permissions
 	public Permission break1 = new Permission("buildrights.break.stone");			//BlockListener
@@ -119,11 +120,11 @@ public class BuildRights extends JavaPlugin {
 	public Permission break43 = new Permission("buildrights.break.doublestep");		//BlockListener
 	public Permission break44 = new Permission("buildrights.break.slab");			//BlockListener
 	public Permission break45 = new Permission("buildrights.break.brick"); 			//BlockListener
+	public Permission break46 = new Permission("buildrights.break.tnt");			//BlockListener
 	
 	@Override
 	public void onEnable() {
 		PluginManager pm = getServer().getPluginManager();
-		
 		//core
 		pm.addPermission(brnotify);
 		pm.addPermission(brallperms);
@@ -175,7 +176,7 @@ public class BuildRights extends JavaPlugin {
 		pm.addPermission(place43);
 		pm.addPermission(place44);
 		pm.addPermission(place45);
-		//pm.addPermission(place46);
+		pm.addPermission(place46);
 		//pm.addPermission(place47);
 		//pm.addPermission(place48);
 		//pm.addPermission(place49);
@@ -227,7 +228,7 @@ public class BuildRights extends JavaPlugin {
 		pm.addPermission(break43);
 		pm.addPermission(break44);
 		pm.addPermission(break45);
-		//pm.addPermission(break46);
+		pm.addPermission(break46);
 		//pm.addPermission(break47);
 		//pm.addPermission(break48);
 		//pm.addPermission(break49);
