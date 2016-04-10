@@ -1,4 +1,6 @@
 package com.njdaeger.blocklistener;
+import net.md_5.bungee.api.chat.ClickEvent.Action;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -1914,6 +1916,86 @@ public class BlockListener implements Listener {
 	
 	
 	
+	////////BRICK//////// 45
+	@EventHandler
+	public void brickp(BlockPlaceEvent event) {
+		Player builder = event.getPlayer();
+		if (BlockListenerUtilBuild.hasPermission(builder, "buildrights.place.*", "buildrights.place.brick", "buildrights.*")) {
+			if (event.getBlock().getType() == Material.BRICK) {
+				event.setCancelled(false);
+			}
+		}else if (BlockListenerUtilBuild1.hasPermission(builder, "buildrights.place.*", "buildrights.place.brick", "buildrights.*")) {
+			if (event.getBlock().getType() == Material.BRICK) {
+				ChatUtilBuild.sendMessage(builder, event);
+				event.setCancelled(true);
+				for (Player player : Bukkit.getServer().getOnlinePlayers()) {
+					if (player.hasPermission("buildrights.notify") || player.isOp() || player.hasPermission("buildrights.*")) {
+						ChatUtilBuildRep.sendMessage(player, builder, event);
+					}
+				}
+			}
+		}
+	}@EventHandler
+	public void brickb(BlockBreakEvent event) {
+		Player breaker = event.getPlayer();
+		if (BlockListenerUtilBreak.hasPermission(breaker, "buildrights.break.*", "buildrights.break.brick", "buildrights.*")) {
+			if (event.getBlock().getType() == Material.BRICK) {
+				event.setCancelled(false);
+			}
+		}else if(BlockListenerUtilBreak1.hasPermission(breaker, "buildrights.break.*", "buildrights.break.brick", "buildrights.*")) {
+			if (event.getBlock().getType() == Material.BRICK) {
+				ChatUtilBreak.sendMessage(breaker, event);
+				event.setCancelled(true);
+				for (Player player : Bukkit.getServer().getOnlinePlayers()) {
+					if (player.hasPermission("buildrights.notify") || player.isOp() | player.hasPermission("buildrights.*")) {
+						ChatUtilBreakRep.sendMessage(player, breaker, event);
+					}
+				}
+			}
+		}
+	}
 	
+	
+	
+	////////TNT////////
+	@EventHandler
+	public void tntp(BlockPlaceEvent event) {
+		Player builder = event.getPlayer();
+		if (BlockListenerUtilBuild.hasPermission(builder, "buildrights.place.*", "buildrights.place.tnt", "buildrights.*")) {
+			if (event.getBlock().getType() == Material.TNT) {
+				event.setCancelled(false);
+			}
+		}else if (BlockListenerUtilBuild1.hasPermission(builder, "buildrights.place.*", "buildrights.place.tnt", "buildrights.*")) {
+			if (event.getBlock().getType() == Material.TNT) {
+				ChatUtilBuild.sendMessage(builder, event);
+				event.setCancelled(true);
+				for (Player player : Bukkit.getServer().getOnlinePlayers()) {
+					if (player.hasPermission("buildrights.notify") || player.isOp() || player.hasPermission("buildrights.*")) {
+						player.sendMessage(ChatColor.RED + builder.getName() + " has tried to place " + event.getBlock().getType().toString().toLowerCase() + 
+								" Kick:" + ChatColor.DARK_GREEN + "yes" + Action.RUN_COMMAND + "/kick" + builder.getName() + ChatColor.DARK_GRAY + ChatColor.BOLD + 
+								"/" + ChatColor.DARK_RED + "no" + ChatColor.RED + "?");
+					}
+				}
+			}
+		}
+	}@EventHandler
+	public void tntb(BlockBreakEvent event) {
+		Player breaker = event.getPlayer();
+		if (BlockListenerUtilBreak.hasPermission(breaker, "buildrights.break.*", "buildrights.break.tnt", "buildrights.*")) {
+			if (event.getBlock().getType() == Material.TNT) {
+				event.setCancelled(false);
+			}
+		}else if(BlockListenerUtilBreak1.hasPermission(breaker, "buildrights.break.*", "buildrights.break.tnt", "buildrights.*")) {
+			if (event.getBlock().getType() == Material.TNT) {
+				ChatUtilBreak.sendMessage(breaker, event);
+				event.setCancelled(true);
+				for (Player player : Bukkit.getServer().getOnlinePlayers()) {
+					if (player.hasPermission("buildrights.notify") || player.isOp() | player.hasPermission("buildrights.*")) {
+						ChatUtilBreakRep.sendMessage(player, breaker, event);
+					}
+				}
+			}
+		}
+	}
 }
 		
