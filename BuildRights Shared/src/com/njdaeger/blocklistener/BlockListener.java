@@ -1,5 +1,7 @@
 package com.njdaeger.blocklistener;
+import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ClickEvent.Action;
+import net.md_5.bungee.api.chat.TextComponent;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -1971,10 +1973,12 @@ public class BlockListener implements Listener {
 				ChatUtilBuild.sendMessage(builder, event);
 				event.setCancelled(true);
 				for (Player player : Bukkit.getServer().getOnlinePlayers()) {
+					TextComponent yes = new TextComponent("yes");
+					TextComponent no = new TextComponent("no");
+					yes.setClickEvent(new ClickEvent(Action.RUN_COMMAND, "/kick" + builder.getName() + " " + player.getName() + "kicked you for placing TNT!"));
+					no.setClickEvent(new ClickEvent(Action.RUN_COMMAND, "/msg" + player.getName() + ChatColor.RED + " If he tries again, kick him!"));
 					if (player.hasPermission("buildrights.notify") || player.isOp() || player.hasPermission("buildrights.*")) {
-						player.sendMessage(ChatColor.RED + builder.getName() + " has tried to place " + event.getBlock().getType().toString().toLowerCase() + 
-								" Kick:" + ChatColor.DARK_GREEN + "yes" + Action.RUN_COMMAND + "/kick" + builder.getName() + ChatColor.DARK_GRAY + ChatColor.BOLD + 
-								"/" + ChatColor.DARK_RED + "no" + ChatColor.RED + "?");
+						player.sendMessage(ChatColor.RED + builder.getName() + " has tried to place " + event.getBlock().getType().toString().toLowerCase() + ". Kick:" + ChatColor.DARK_GREEN + yes + ChatColor.DARK_GRAY + ChatColor.BOLD + "/" + ChatColor.DARK_RED + no + ChatColor.RED + "?");
 					}
 				}
 			}
