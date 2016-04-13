@@ -1959,8 +1959,8 @@ public class BlockListener implements Listener {
 	
 	
 	
-	
-	////////TNT////////
+	/**
+	////////TNT//////// 46
 	@EventHandler
 	public void tntp(BlockPlaceEvent event) {
 		Player builder = event.getPlayer();
@@ -2002,5 +2002,7 @@ public class BlockListener implements Listener {
 			}
 		}
 	}
+	*/
+	
 }
 		

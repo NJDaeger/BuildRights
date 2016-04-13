@@ -6,14 +6,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.njdaeger.blocklistener.BlockListener;
 import com.njdaeger.blocklistener.WorldeditListener;
-import com.njdaeger.util.BlockListenerUtilBreak;
-import com.njdaeger.util.BlockListenerUtilBreak1;
-import com.njdaeger.util.BlockListenerUtilBuild;
-import com.njdaeger.util.BlockListenerUtilBuild1;
-import com.njdaeger.util.chatutil.ChatUtilBreak;
-import com.njdaeger.util.chatutil.ChatUtilBreakRep;
-import com.njdaeger.util.chatutil.ChatUtilBuild;
-import com.njdaeger.util.chatutil.ChatUtilBuildRep;
 
 public class BuildRights extends JavaPlugin {
 	
@@ -72,7 +64,7 @@ public class BuildRights extends JavaPlugin {
 	public Permission place43 = new Permission("buildrights.place.doublestep");		//BlockListener
 	public Permission place44 = new Permission("buildrights.place.slab");			//BlockListener
 	public Permission place45 = new Permission("buildrights.place.brick");			//BlockListener
-	public Permission place46 = new Permission("buildrights.place.tnt");			//BlockListener
+	//public Permission place46 = new Permission("buildrights.place.tnt");			//BlockListener
 	
 		//break permissions
 	public Permission break1 = new Permission("buildrights.break.stone");			//BlockListener
@@ -120,7 +112,7 @@ public class BuildRights extends JavaPlugin {
 	public Permission break43 = new Permission("buildrights.break.doublestep");		//BlockListener
 	public Permission break44 = new Permission("buildrights.break.slab");			//BlockListener
 	public Permission break45 = new Permission("buildrights.break.brick"); 			//BlockListener
-	public Permission break46 = new Permission("buildrights.break.tnt");			//BlockListener
+	//public Permission break46 = new Permission("buildrights.break.tnt");			//BlockListener
 	
 	@Override
 	public void onEnable() {
@@ -176,7 +168,7 @@ public class BuildRights extends JavaPlugin {
 		pm.addPermission(place43);
 		pm.addPermission(place44);
 		pm.addPermission(place45);
-		pm.addPermission(place46);
+		//pm.addPermission(place46);
 		//pm.addPermission(place47);
 		//pm.addPermission(place48);
 		//pm.addPermission(place49);
@@ -228,7 +220,7 @@ public class BuildRights extends JavaPlugin {
 		pm.addPermission(break43);
 		pm.addPermission(break44);
 		pm.addPermission(break45);
-		pm.addPermission(break46);
+		//pm.addPermission(break46);
 		//pm.addPermission(break47);
 		//pm.addPermission(break48);
 		//pm.addPermission(break49);
@@ -239,14 +231,6 @@ public class BuildRights extends JavaPlugin {
 		
 		new BlockListener(this);
 		new WorldeditListener(this);
-		new BlockListenerUtilBuild();
-		new BlockListenerUtilBreak();
-		new BlockListenerUtilBreak1();
-		new BlockListenerUtilBuild1();
-		new ChatUtilBreak();
-		new ChatUtilBuild();
-		new ChatUtilBreakRep();
-		new ChatUtilBuildRep();
 	}
 	@Override
 	public void onDisable() {
