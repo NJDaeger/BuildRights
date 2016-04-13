@@ -1959,7 +1959,6 @@ public class BlockListener implements Listener {
 	
 	
 	
-	/**
 	////////TNT//////// 46
 	@EventHandler
 	public void tntp(BlockPlaceEvent event) {
@@ -2001,8 +2000,6 @@ public class BlockListener implements Listener {
 				}
 			}
 		}
-	}
-	*/
-	
+	}	
 }
 		
